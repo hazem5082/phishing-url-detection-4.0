@@ -1,0 +1,145 @@
+# ============================================================================
+# PHISHING URL DETECTION PROJECT - GIT IGNORE
+# ============================================================================
+
+# ============================================================================
+# Python & Virtual Environments
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+env.bak/
+venv.bak/
+
+# ============================================================================
+# IDE & Editor Files
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+*.code-workspace
+
+# ============================================================================
+# Jupyter & Notebooks
+# ============================================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+*.ipynb~
+
+# ============================================================================
+# Large Data Files (EXCLUDED from repo - keep locally)
+# ============================================================================
+# Raw data files (too large for GitHub)
+data/raw/*.csv
+data/raw_backup/
+data/large_datasets/
+
+# Processed data (keep in repo - shows preprocessing work)
+# KEEP: data/processed/phishing_processed.csv
+
+# ============================================================================
+# Cache & Temporary Files
+# ============================================================================
+*.cache
+*.pkl
+*.pickle
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# ============================================================================
+# Logs & Reports
+# ============================================================================
+*.log
+logs/
+*.out
+*.err
+
+# ============================================================================
+# OS-specific Files
+# ============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+*.lnk
+Thumbs.db
+
+# ============================================================================
+# Environment Variables & Credentials
+# ============================================================================
+.env
+.env.local
+.env.*.local
+config/secrets.json
+credentials.json
+api_keys.txt
+
+# ============================================================================
+# Build & Distribution Files
+# ============================================================================
+build/
+dist/
+*.tar.gz
+*.zip
+
+# ============================================================================
+# IDE Specific
+# ============================================================================
+.vscode/launch.json
+.vscode/settings.json
+.vscode/extensions.json
+
+# ============================================================================
+# KEEP IN REPO (Important for submission)
+# ============================================================================
+# Models - KEEP the trained model
+!models/phishing_rf_model.joblib
+
+# Processed data - KEEP for review
+!data/processed/phishing_processed.csv
+
+# Visualizations - KEEP for report
+!visualizations/
+
+# Test results - KEEP for review
+!tests/reports/
+
+# ============================================================================
